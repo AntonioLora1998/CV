@@ -1,0 +1,73 @@
+@import url('global.css');
+
+/* ====== CONTENEDOR PRINCIPAL ====== */
+.experience-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.experience-container h1 {
+    font-size: 2.5rem;
+    color: #1e1e2f;
+    margin-bottom: 20px;
+}
+
+/* ====== ESTILOS DE LOS TRABAJOS ====== */
+.job {
+    text-align: left;
+    padding: 20px;
+    margin: 20px 0;
+    background: #f9f9f9;
+    border-left: 5px solid #ffcc00;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.job:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.job h2 {
+    font-size: 1.8rem;
+    color: #1e1e2f;
+}
+
+.job p {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 5px 0;
+}
+
+.job strong {
+    color: #ffcc00;
+}
+
+/* ====== DISEÑO RESPONSIVO ====== */
+@media (max-width: 768px) {
+    .experience-container {
+        padding: 30px;
+        margin: 30px 15px;
+    }
+
+    .experience-container h1 {
+        font-size: 2rem;
+    }
+
+    .job {
+        padding: 15px;
+    }
+
+    .job h2 {
+        font-size: 1.5rem;
+    }
+
+    .job p {
+        font-size: 1rem;
+    }
+}

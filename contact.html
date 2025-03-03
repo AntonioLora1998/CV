@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Estilos generales -->
+    <link rel="stylesheet" href="styles/contact.css"> <!-- Estilos específicos de contacto -->
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Mí</a></li>
+                <li><a href="experience.html">Experiencia</a></li>
+                <li><a href="skills.html">Habilidades</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="contact.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+<main class="contact-container">
+    <h1>Contacto</h1>
+    <p>Si quieres ponerte en contacto conmigo, completa el siguiente formulario o usa mis redes sociales.</p>
+
+    <form class="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+
+    <div class="social-links">
+        <h2>También puedes encontrarme en:</h2>
+        <a href="#" class="social-btn">LinkedIn</a>
+        <a href="#" class="social-btn">GitHub</a>
+        <a href="#" class="social-btn">Twitter</a>
+    </div>
+</main>
+
+<script>
+    document.querySelector(".contact-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("¡Gracias por tu mensaje! Me pondré en contacto pronto.");
+    });
+</script>
+
+</body>
+</html>

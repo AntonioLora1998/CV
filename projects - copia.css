@@ -1,0 +1,105 @@
+@import url('global.css');
+
+/* ====== CONTENEDOR PRINCIPAL ====== */
+.projects-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.projects-container h1 {
+    font-size: 2.5rem;
+    color: #1e1e2f;
+    margin-bottom: 30px;
+}
+
+/* ====== TARJETAS DE PROYECTOS ====== */
+.project-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== IMAGEN DEL PROYECTO ====== */
+.project-card img {
+    width: 40%;
+    object-fit: cover;
+}
+
+/* ====== INFORMACIÓN DEL PROYECTO ====== */
+.project-info {
+    width: 60%;
+    padding: 20px;
+    text-align: left;
+}
+
+.project-info h2 {
+    font-size: 1.8rem;
+    color: #1e1e2f;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* ====== BOTÓN DE VER PROYECTO ====== */
+.btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: #1e1e2f;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #ff9900;
+}
+
+/* ====== DISEÑO RESPONSIVO ====== */
+@media (max-width: 768px) {
+    .projects-container {
+        padding: 20px;
+    }
+
+    .projects-container h1 {
+        font-size: 2rem;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .project-info {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .project-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-info p {
+        font-size: 0.95rem;
+    }
+}
